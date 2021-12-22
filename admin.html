@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>admin</title>
+      <link rel="shortcut icon" href="logo/Js-logos_white.png">
+      <style>
+         body{
+         background: url(https://get.wallhere.com/photo/food-sushi-seafood-tomatoes-1828853.jpg);
+         }
+         header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background: #fff;
+         padding: 20px 9%; 
+         display: flex;
+         align-items: center;
+         font-family: 'Lato',sans-serif;
+         justify-content: space-between;
+         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+         }
+         header .logo {
+         font-size: 30px;
+         color: #333;
+         font-weight: bolder;
+         text-decoration: none;
+         }
+         header .navbar a{
+         font-size: 20px;
+         padding: 0 20px;
+         color: #666;
+         text-decoration: none;
+         }
+         header .navbar a:hover {
+         color: #ebdfd4;
+         text-decoration: none;
+         }
+         table {
+         margin: auto;
+         margin-top: 120px;
+         font-family: Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 70%;
+         }
+         table td, table th {
+         border: 1px solid #ddd;
+         padding: 8px;
+         }
+         table tr:hover {
+         background-color: #ddd;
+         }
+         table td {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color: #04AA6D;
+         color: white;
+         }
+         .button{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         }
+         .button button{
+         margin: 10px;
+         width: 200px;
+         height: 40px;
+         color: white;
+         font-size: 16px;
+         font-weight: bold;
+         border: 1px solid #324ecd;
+         backdrop-filter: blur(10px);
+         background: none;
+         border-radius: 15px;
+         transition-duration: 0.4s;
+         }
+         .button button:hover{
+         background: #153aa0;
+         }
+      </style>
+   </head>
+   <body onload="UsersView()">
+      <header>
+         <a href="index .html" class="logo">Japonasushi <span>.</span> </a>
+         <nav class="navbar">
+            <a href="index .html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="index .html">Contact</a>
+         </nav>
+      </header>
+      <table id="table">
+         <tr>
+            <td>Number</td>
+            <td>Email</td>
+            <td>Name</td>
+            <td>Password</td>
+            <td>Status</td>
+         </tr>
+      </table>
+      <span class="button">
+      <button onclick="chng_email()">Change Email</button>
+      <button onclick="chng_pswrd()">Change Password</button>
+      <button onclick="enable_user()">Enable by Name</button>
+      <button onclick="disable_user()">Disable by Name</button>
+      </span>
+      <script src="Js/user.js"></script>
+   </body>
+</html>

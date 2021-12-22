@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat:wght@100;900&family=Open+Sans:wght@300&family=Readex+Pro:wght@200&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+body {
+	font-family: 'Merriweather Sans', sans-serif;
+	background: url(https://kartinkin.net/uploads/posts/2021-07/1625547996_12-kartinkin-com-p-fon-dlya-fud-semki-krasivie-foni-13.jpg) no-repeat;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 20px 9%;
+	display: flex;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	justify-content: space-between;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+	font-size: 30px;
+	color: #333;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+header .navbar a {
+	font-size: 20px;
+	padding: 0 20px;
+	color: #666;
+	text-decoration: none;
+}
+
+header .navbar a:hover {
+	color: #ebdfd4;
+	text-decoration: none;
+}
+
+main {
+	display: grid;
+	grid-template-columns: auto 450px auto;
+	grid-template-areas: ". a .";
+}
+
+.b_form_sign_up {
+	grid-area: a;
+	justify-content: center;
+	margin-top: 130px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+	height: 490px;
+	width: 430px;
+}
+
+form {
+	padding: 10px 50px;
+}
+
+.form-control label {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: rgb(105, 101, 101);
+}
+
+.form-control input {
+	border-radius: 3px;
+	border: 2px solid #ffffff;
+	display: block;
+	font-size: 15px;
+	width: 310px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 32px;
+	color: white;
+}
+
+.forgot {
+	margin-top: 20px;
+}
+
+.forgot a,
+.forgot a:visited {
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #374f68;
+	transition: 0.3s;
+	border-radius: 12px;
+}
+
+.forgot a:hover,
+.sign a:hover {
+	background: #0a66c34d;
+}
+
+.sign {
+	text-align: center;
+	color: white;
+}
+
+.sign a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: #374f68;
+	transition: 0.3s;
+	border-radius: 12px;
+}
+
+.button {
+	cursor: pointer;
+	background-color: #3498db;
+	border: 2px solid #3498db;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.button:hover {
+	background-color: #31729e;
+	border: 2px solid #31729e;
+}

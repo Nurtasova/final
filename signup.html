@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/regist.css">
+    
+    <title>Sign up form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("h1").click(function(){
+    $(".form-control").fadeIn("slow");
+  });
+});
+</script> 
+</head>
+<body>
+   <header>
+      <a href="#" class="logo">Japonasushi <span>.</span> </a>
+      <nav class="navbar">
+          <a href="index .html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="#contact">Contact</a>
+      </nav>
+  </header>
+  <main>
+   <section class="b_form_sign_up">
+           <form id="Signup" method="post">
+            <h1>Sign up</h1>
+              <div class="form-control" style="display: none;">
+                 <input type="text" name="username" placeholder="Enter Username" required>
+                 <p id="username_message"></p>
+              </div>
+              <div class="form-control" style="display: none;">
+                 <input type="email" name="email"  placeholder="Enter email">
+                 <p id="email_message"></p>
+              </div>
+              <div class="form-control" style="display: none;">
+                 <input type="password" placeholder="Enter password" name="password" required>
+                 <p id="password_message"></p>
+              </div>
+              <div class="form-control" style="display: none;">
+                 <input type="password" placeholder="Repeat password" name="repassword" required>
+                 <p id="repassword_message"></p>
+              </div>
+
+                 <input type="button" class="button" value="Sign up" onclick="Signup()">
+              <div class="sign">
+               <p>Already a member? <a href="logIn.html"> &nbsp; Sign In</a></p>
+           </div>
+           </form>
+           </section>
+         </main>
+      <script src="Js/main.js"></script>
+</body>
+</html>
